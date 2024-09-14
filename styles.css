@@ -111,6 +111,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .weather-details-container .weather-detail-item > p:first-child {
@@ -168,6 +169,7 @@ body {
 .weekly-forecast-container .day-weather-item > div {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .weekly-forecast-container .day-weather-item > div > p:first-child {
