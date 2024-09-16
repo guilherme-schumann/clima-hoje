@@ -41,6 +41,11 @@ body {
   margin-top: 60px;
 }
 
+.showcase-container > img {
+  width: 200px;
+  height: 200px;
+}
+
 .showcase-container .showcase-text > h2:first-child {
   font-size: 3.125rem;
   font-weight: 700;

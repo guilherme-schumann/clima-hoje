@@ -19,51 +19,51 @@
         <input
           class="custom-input"
           type="text"
-          name="city"
-          id="city"
-          placeholder="Procure por cidades"
+          name="cityInput"
+          id="cityInput"
+          placeholder="Procure por uma cidade"
           >
       </nav>
 
       <div class="showcase-container">
         <div class="showcase-text">
-          <h2>São Paulo</h2>
-          <p>Chance de chuva 0%</p>
-          <h2>28º</h2>
+          <h2 id="cityName">São Paulo</h2>
+          <p id="chance-rain">Chance de chuva 0%</p>
+          <h2 id="temperature">28º</h2>
         </div>
-        <img src="./images/sun clouds-large.svg" alt="Sol com poucas núvens">
+        <img id="weather-icon" src="./images/weather-icon/few-clouds.svg" alt="Sol com poucas núvens">
       </div>
 
       <div class="hourly-forecast-container">
         <div class="hour-weather-item">
           <p>6:00 AM</p>
-          <img src="./images/sun cloud.svg" alt="Sol com poucas núvens">
-          <p>24º</p>
+          <img src="./images/weather-icon/few-clouds.svg" alt="Sol com poucas núvens">
+          <p id="hourly-temp-1">24º</p>
         </div>
         <div class="hour-weather-item">
           <p>9:00 AM</p>
-          <img src="./images/sun clouds.svg" alt="Sol com núvens">
-          <p>28º</p>
+          <img src="./images/weather-icon/broken-clouds.svg" alt="Sol com núvens">
+          <p id="hourly-temp-2">28º</p>
         </div>
         <div class="hour-weather-item">
           <p>12:00 PM</p>
-          <img src="./images/sun.svg" alt="Ensolarado">
-          <p>30º</p>
+          <img src="./images/weather-icon/clear-sky.svg" alt="Ensolarado">
+          <p id="hourly-temp-3">30º</p>
         </div>
         <div class="hour-weather-item">
           <p>3:00 PM</p>
-          <img src="./images/sun.svg" alt="Ensolarado">
-          <p>32º</p>
+          <img src="./images/weather-icon/clear-sky.svg" alt="Ensolarado">
+          <p id="hourly-temp-4">32º</p>
         </div>
         <div class="hour-weather-item">
           <p>6:00 PM</p>
-          <img src="./images/clouds.svg" alt="Núvens">
-          <p>27º</p>
+          <img src="./images/weather-icon/scattered-clouds.svg" alt="Núvens">
+          <p id="hourly-temp-5">27º</p>
         </div>
         <div class="hour-weather-item">
           <p>9:00 PM</p>
-          <img src="./images/moon clouds.svg" alt="Luar com núvens">
-          <p>26º</p>
+          <img src="./images/weather-icon/few-clouds-night.svg" alt="Luar com núvens">
+          <p id="hourly-temp-6">26º</p>
         </div>
       </div>
 
@@ -71,29 +71,29 @@
         <div class="weather-detail-item">
           <p>Sensação Términca</p>
           <div>
-            <img src="./images/temp.svg" alt="Sensação Térmica">
-            <p>30º</p>
+            <img src="./images/weather-detail-icon/temp.svg" alt="Sensação Térmica">
+            <p id="feels-like">30º</p>
           </div>
         </div>
         <div class="weather-detail-item">
           <p>Chance de Chuva</p>
           <div>
-            <img src="./images/rain.svg" alt="Chance de Chuva">
-            <p>2%</p>
+            <img src="./images/weather-detail-icon/rain.svg" alt="Chance de Chuva">
+            <p id="rain-chance">2%</p>
           </div>
         </div>
         <div class="weather-detail-item">
           <p>Vento</p>
           <div>
-            <img src="./images/wind.svg" alt="Vento">
-            <p>2<span>Km/h</span></p>
+            <img src="./images/weather-detail-icon/wind.svg" alt="Vento">
+            <p id="wind-speed">2<span>Km/h</span></p>
           </div>
         </div>
         <div class="weather-detail-item">
           <p>Indice UV</p>
           <div>
-            <img src="./images/uv.svg" alt="Indice UV">
-            <p>4</p>
+            <img src="./images/weather-detail-icon/uv.svg" alt="Indice UV">
+            <p id="uv-index">4</p>
           </div>
         </div>
       </div>
@@ -102,7 +102,7 @@
       <div class="weekly-forecast-container">
         <div class="day-weather-item">
           <p>Segunda</p>
-          <img src="./images/sun cloud.svg" alt="Sol com núvens">
+          <img src="./images/weather-icon/few-clouds.svg" alt="Sol com núvens">
           <div>
             <p>29º</p>
             <p>26º</p>
@@ -110,7 +110,7 @@
         </div>
         <div class="day-weather-item">
           <p>Terça</p>
-          <img src="./images/sun.svg" alt="Ensolarado">
+          <img src="./images/weather-icon/clear-sky.svg" alt="Ensolarado">
           <div>
             <p>33º</p>
             <p>27º</p>
@@ -118,7 +118,7 @@
         </div>
         <div class="day-weather-item">
           <p>Quarta</p>
-          <img src="./images/sun.svg" alt="Ensolarado">
+          <img src="./images/weather-icon/clear-sky.svg" alt="Ensolarado">
           <div>
             <p>32º</p>
             <p>26º</p>
@@ -126,7 +126,7 @@
         </div>
         <div class="day-weather-item">
           <p>Quinta</p>
-          <img src="./images/sun clouds.svg" alt="Sol com núvens">
+          <img src="./images/weather-icon/few-clouds.svg" alt="Sol com núvens">
           <div>
             <p>30º</p>
             <p>24º</p>
@@ -134,7 +134,7 @@
         </div>
         <div class="day-weather-item">
           <p>Sexta</p>
-          <img src="./images/rain-2.svg" alt="Chuva">
+          <img src="./images/weather-icon/shower-rain.svg" alt="Chuva">
           <div>
             <p>28º</p>
             <p>22º</p>
@@ -142,7 +142,7 @@
         </div>
         <div class="day-weather-item">
           <p>Sábado</p>
-          <img src="./images/rain-2.svg" alt="Chuva">
+          <img src="./images/weather-icon/rain.svg" alt="Chuva">
           <div>
             <p>26º</p>
             <p>20º</p>
@@ -150,7 +150,7 @@
         </div>
         <div class="day-weather-item">
           <p>Domingo</p>
-          <img src="./images/sun clouds.svg" alt="Sol com núvens">
+          <img src="./images/weather-icon/few-clouds.svg" alt="Sol com núvens">
           <div>
             <p>30º</p>
             <p>25º</p>
@@ -159,6 +159,7 @@
       </div>
     </div>
   </div>
-  
+  <script src="./js/weather-icon.js"></script>
+  <script type="module" src="./js/openWeatherAPI.js"></script>
 </body>
 </html>
